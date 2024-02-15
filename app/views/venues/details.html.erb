@@ -1,4 +1,4 @@
-<h1>venue Details</h1>
+<h1>Venue Details</h1>
 
 <dl>
   <dt>Address</dt>
@@ -57,6 +57,7 @@
   <% @the_venue.comments.each do |comment| %>
   <tr>
     <td>
+      <%#= commenter_username = User.where(:id => comment.author_id).at(0).username %>
       <%= comment.commenter.username %>
     </td>
 
